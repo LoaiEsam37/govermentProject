@@ -1,0 +1,94 @@
+body {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  background-color: #01011c;
+  color: #fff;
+}
+
+body h1 {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container {
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: full;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+header .content h1 {
+  font-size: 3rem;
+}
+
+header .content p {
+  font-size: 0.9rem;
+  max-width: 400px;
+}
+
+header .content a {
+  border: none;
+  background-color: transparent;
+  letter-spacing: 2.5px;
+  position: relative;
+  transform: translateY(70px);
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .content a::after {
+  content: "";
+  position: absolute;
+  rotate: 45deg;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-top: 1px white solid;
+  border-right: 1px white solid;
+}
+
+.header .content button::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  border-top: 1px black solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.image__wrapper img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 600px;
+}
+
+section {
+  width: 1000px;
+}
